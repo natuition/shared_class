@@ -21,3 +21,9 @@ class TelegramRequest:
         self.message = message
         self.send_to = send_to
         self.robot_monitoring = robot_monitoring
+        self.buttons = None
+        
+    def add_button(self, name: str, link : str):
+        if self.buttons is None:
+            self.buttons = list()
+        self.buttons.append({"name":name, "link":link})
