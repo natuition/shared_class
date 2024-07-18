@@ -1,2 +1,4 @@
 from shared_class.robot_synthesis import RobotSynthesis
 from shared_class.robot_monitoring import RobotMonitoring
+from shared_class.telegram_request import TelegramRequest
+from shared_class.telegram_request import Receiver
